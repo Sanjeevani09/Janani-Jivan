@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janani Jivan</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Navbar start -->
+    <header class="header">
+        <h2>JananiJivan</h2>
+        <ul>
+            <li><a href="{{ url_for('dietplanner') }}" >Diet Planner</a></li>
+            <li><a href="{{ url_for('telemedicine') }}">Telemedicine</a></li>
+            <li><a href="#locate">Locate Hospitals</a></li>
+            <li><a href="#govsch">Govt. Schemes</a></li>
+            <li><a href="#abtus">About Us</a></li>
+        </ul>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Banner start -->
+    <img src="{{ url_for('static', filename='img/Banner.jpg') }}" alt="Banner" class="banner">
+    <!-- Banner end -->
+
+    <!-- Diet Planner and Telemedicine start -->
+    <div class="Services">
+        <div class="div1">
+            <img src="{{ url_for('static', filename='img/DPimg.png') }}" alt="Diet Planner Image" class="coverimg">
+            <a href="{{ url_for('dietplanner') }}" class="STitle"><h2>Diet Planner</h2> <img src="{{ url_for('static', filename='img/arrow.png') }}" alt="arrow" width="25px" height="25px"></a>
+            <p>Elevate your pregnancy journey with JananiJivan's Diet Planner. Create personalized, budget-friendly meal plans that cater to your nutritional needs. Nourish yourself and your baby with every bite. Start your healthy pregnancy today!</p>
+        </div>
+        <div class="div2">
+            <img src="{{ url_for('static', filename='img/TMimg.png') }}" alt="Telemedicine Image" class="coverimg">
+            <a href="{{ url_for('telemedicine') }}" class="STitle"><h2>Telemedicine</h2> <img src="{{ url_for('static', filename='img/arrow.png') }}" alt="arrow" width="25px" height="25px"></a>
+            <p>Connect with ease through JananiJivan's Telemedicine. Video-call health care professionals for personalized consultations. Access expert advice from the comfort of your home, ensuring your well-being throughout your pregnancy journey.</p>
+        </div>
+    </div>
+    <!-- Diet Planner and Telemedicine end -->
+
+    <!-- Locate Hospitals start -->
+    <div class="Hospitals" id="locate">
+        <div class="Text">
+            <h1>Locate Hospitals Easily <br>Near You!</h1>
+            <p>Discover care nearby with JananiJivan's Locate Hospital feature. <br>Easily find health care facilities in your village. <br>Access vital information, get directions, and ensure prompt medical support. Your health, your village – closer than ever. <br>Explore now!
+            </p><br>
+            <button class="hbutton" onclick="getLocation()"><img src="{{ url_for('static', filename='img/Map Point.png') }}" alt="">Hospitals near me</button>
+            <script src="{{ url_for('static', filename='js/hospital.js') }}"></script>
+        </div>
+        <div class="HPic">
+            <img src="{{ url_for('static', filename='img/Hospital.png') }}" alt="" class="building">
+        </div>
+    </div>
+    <!-- Locate Hospitals end -->
+
+    <!-- Govt. Initiatives start -->
+    <div class="gov" id="govsch">
+        <div class="labels">
+            <h1>Government Initiatives</h1>
+            <p>Discover vital government initiatives at JananiJivan. Access information, subsidies, and healthcare schemes designed for your well-being and a healthy pregnancy journey.</p><br>
+            <button class="download" onclick="downloadPdfButton()">Download PDF</button>
+            <script src="{{ url_for('static', filename='js/downloadpdf.js') }}"></script>
+        </div>
+        <div class="pic">
+            <img src="{{ url_for('static', filename='img/Modi2.png') }}" alt="" class="modi">
+        </div>
+    </div>
+    <!-- Govt. Initiatives end -->
+
+    <!-- About us start -->
+    <div class="aboutus" id="abtus">
+        <div class="info">
+            <h2>JananiJivan</h2><br>
+            <p>In need of assistance or have a question?<br><br>
+                We're here to help! Contact JananiJivan through the information given,  and our dedicated team will respond promptly. Your well-being is our priority, and we're committed to providing the support you deserve.</p>
+        </div>
+        <div class="line">
+        </div>
+        <div class="contact" >
+            <p>Email: Jananijivan@gmail.com
+                <br><br>
+                Contact number: 9872089951
+                <br><br>
+                Office Hours: 10 am to 5 pm <br>
+                Sunday's closed</p>
+        </div>
+    </div>
+    <div class="last">
+        <p>Feel free to reach out, and let us be a part of your journey to a healthy and joyful motherhood</p>
+    </div>
+    <!-- About us end -->
+</body>
+</html>

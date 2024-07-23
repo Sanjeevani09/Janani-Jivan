@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janani Jivan</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/navigate.js') }}"></script>
+</head>
+<body>
+    <!-- Navbar start -->
+    <header class="header">
+        <h2>JananiJivan</h2>
+        <ul>
+            <li><a href="{{ url_for('index') }}" >Home</a></li>
+            <li><a href="{{ url_for('telemedicine') }}">Telemedicine</a></li>
+            <li><a href="{{ url_for('index') }}#locate">Locate Hospitals</a></li>
+            <li><a href="{{ url_for('index') }}#govsch">Govt. Schemes</a></li>
+            <li><a href="#abtus" onclick="smoothScroll(event)">About Us</a></li>
+        </ul>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Diet Table starts -->
+    <div>
+        <h2 style="margin-left: 50px;">Indian Diet Chart And Meal Plan For Pregnancy</h2>
+    </div>
+    <div class="diettable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Week Days</th>
+                    <th>Pre Breakfast snack</th>
+                    <th>Morning Breakfast</th>
+                    <th>Mid Morning Snack</th>
+                    <th>Lunch</th>
+                    <th>Evening Snack</th>
+                    <th>Dinner</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                    <tr>
+                        {% for col in row %}
+                            <td>{{ col }}</td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!-- Diet Table ends -->
+
+    <!-- About us start -->
+    <div class="aboutus" id="abtus">
+        <div class="info">
+            <h2>JananiJivan</h2><br>
+            <p>In need of assistance or have a question?<br><br>
+                We're here to help! Contact JananiJivan through the information given,  and our dedicated team will respond promptly. Your well-being is our priority, and we're committed to providing the support you deserve.</p>
+        </div>
+        <div class="line">
+        </div>
+        <div class="contact" >
+            <p>Email: Jananijivan@gmail.com
+                <br><br>
+                Contact number: 9872089951
+                <br><br>
+                Office Hours: 10 am to 5 pm <br>
+                Sunday's closed</p>
+        </div>
+    </div>
+    <div class="last">
+        <p>Feel free to reach out, and let us be a part of your journey to a healthy and joyful motherhood</p>
+    </div>
+    <!-- About us end -->
+</body>
+</html>

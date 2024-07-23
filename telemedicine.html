@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janani Jivan</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navbar start -->
+    <header class="header">
+        <h2>JananiJivan</h2>
+        <ul>
+            <li><a href="{{ url_for('index') }}" >Home</a></li>
+            <li><a href="{{ url_for('dietplanner') }}">Diet Planner</a></li>
+            <li><a href="{{ url_for('index') }}#locate">Locate Hospitals</a></li>
+            <li><a href="{{ url_for('index') }}#govsch">Govt. Schemes</a></li>
+            <li><a href="#abtus" onclick="smoothScroll(event)">About Us</a></li>
+        </ul>
+    </header>
+    <!-- Navbar end -->
+
+    <!-- Mid section starts -->
+    <div>
+        <div class = "midsection">
+            <div class="telelabel">
+                <h1>Reaching Beyond the Boundaries</h1><br>
+                <h3>Consult the Best Doctors From Anywhere in the World!</h3>
+                <p>Get access to the best healthcare services from anywhere in the world. Avail the benefits of tele health and tele medicine with our specialised remote healthcare services.</p>
+                <br>
+                <button class="mbutton" onclick="joinMeetBtn()" ><img src="{{ url_for('static', filename='img/google_meet_icon.png') }}" alt="">Join Meet</button>
+                <script src="{{ url_for('static', filename='js/meet.js') }}"></script>
+            </div>
+            <div class="telepic">
+                <img src="{{ url_for('static', filename='img/telemedpic.jpg') }}" alt="" class="meet">
+            </div>
+        </div>
+    </div>
+    <!-- Mid section ends -->
+    
+    <!-- Setting Reminder starts -->
+    <div style="background-color: #F7F8F8;">
+        <div class="reminder">
+            <div class="form">
+                <h1>Set Reminder for your next Appointment!</h1><br>
+                <label for="to">Your Email:</label> 
+                <input type="email" id="to"><br>
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate"><br>
+                <label for="appointmentTime">Appointment Time:</label>
+                <input type="time" id="appointmentTime"><br><br>
+                <button class="hbutton" onclick="sendMail()">Schedule Appointment</button>
+                <script src="{{ url_for('static', filename='js/sendemail.js') }}"></script>
+            </div>
+        </div>
+    </div>
+    <!-- Setting Reminder starts -->
+
+    <!-- About us start -->
+    <div class="aboutus" id="abtus">
+        <div class="info">
+            <h2>JananiJivan</h2><br>
+            <p>In need of assistance or have a question?<br><br>
+                We're here to help! Contact JananiJivan through the information given,  and our dedicated team will respond promptly. Your well-being is our priority, and we're committed to providing the support you deserve.</p>
+        </div>
+        <div class="line">
+        </div>
+        <div class="contact" >
+            <p>Email: Jananijivan@gmail.com
+                <br><br>
+                Contact number: 9872089951
+                <br><br>
+                Office Hours: 10 am to 5 pm <br>
+                Sunday's closed</p>
+        </div>
+    </div>
+    <div class="last">
+        <p>Feel free to reach out, and let us be a part of your journey to a healthy and joyful motherhood</p>
+    </div>
+    <!-- About us end -->
+</body>
+</html>
