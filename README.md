@@ -19,11 +19,11 @@ Janani Jivan aims to revolutionize maternal healthcare by offering a comprehensi
 
 ## Features
 
-- *Personalized Diet Plans*: Tailored nutritional guidance for a healthy pregnancy.
-- *Hospital Locator*: Easily find nearby medical facilities.
-- *Doctor Consultations*: Seamless access to healthcare professionals.
-- *Government Schemes Information*: Stay informed about available benefits.
-- *Reminder System*: Keep track of appointments and medical check-ups.
+- **Personalized Diet Plans**: Tailored nutritional guidance for a healthy pregnancy.
+- **Hospital Locator**: Easily find nearby medical facilities.
+- **Doctor Consultations**: Seamless access to healthcare professionals.
+- **Government Schemes Information**: Stay informed about available benefits.
+- **Reminder System**: Keep track of appointments and medical check-ups.
 
 ## Getting Started
 
@@ -38,40 +38,47 @@ To get a local copy up and running, follow these steps.
 ### Installation
 
 1. Clone the repo:
-   sh
+   ```sh
    git clone https://github.com/Sanjeevani09/Janani-Jivan.git
+   ```
    
 
 2. Install the required packages:
-   sh
+   ```sh
    pip install -r requirements.txt
+   ```
    
 
 3. Set up the database:
-   sh
+   ```sh
    mysql -u root -p < database.sql
+   ```
    
 
 ## Usage
 
 - Run the Flask server:
-  sh
+  ```sh
   python app.py
-  
+  ```
 
-- Navigate to http://localhost:5000 in your browser.
+- Navigate to *http://localhost:5000* in your browser.
 
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to be. Any contributions you make are greatly appreciated.
 
   1. Fork the Project
+
   2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
   3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+
   4. Push to the Branch (git push origin feature/AmazingFeature)
+  
   5. Open a Pull Request
 
 ## Contact
 
-- Sanjeevani Gupta: ![@Sanjeevani09](https://github.com/Sanjeevani09)
-- Aditya Mayekar: ![@Aditya-Mayekar](https://github.com/Aditya-Mayekar)
+- Sanjeevani Gupta: [@Sanjeevani09](https://github.com/Sanjeevani09)
+- Aditya Mayekar: [@Aditya-Mayekar](https://github.com/Aditya-Mayekar)
