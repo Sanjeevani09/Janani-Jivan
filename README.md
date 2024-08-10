@@ -81,4 +81,4 @@ Contributions are what make the open-source community such an amazing place to b
 ## Contact
 
 - Sanjeevani Gupta: [@Sanjeevani09](https://github.com/Sanjeevani09)
-- Aditya Mayekar: [@Aditya-Mayekar](https://github.com/Aditya-Mayekar)
+- Aditya Vivek Mayekar: [@Aditya-Mayekar](https://github.com/Aditya-Mayekar)
