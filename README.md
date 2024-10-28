@@ -1,6 +1,6 @@
 # Janani Jivan
 
-Janani Jivan is a transformative digital platform dedicated to enhancing maternal healthcare in India. It provides personalized diet plans, an intuitive hospital locator, expert consultations, access to government schemes, and a reminder system to streamline care throughout pregnancy.
+Janani Jivan is a transformative digital platform that enhances maternal healthcare in India. It provides personalized diet plans, an intuitive hospital locator, expert consultations, access to government schemes, and a reminder system to streamline care throughout pregnancy.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Janani Jivan is a transformative digital platform dedicated to enhancing materna
 
 ## About the Project
 
-Janani Jivan aims to revolutionize maternal healthcare by offering a comprehensive suite of services designed to support and empower expectant mothers throughout their pregnancy journey.
+Janani Jivan aims to revolutionize maternal healthcare by offering a comprehensive suite of services to support and empower expectant mothers throughout their pregnancy journey.
 
 ## Features
 
@@ -72,7 +72,7 @@ Contributions are what make the open-source community such an amazing place to b
 
   2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
 
-  3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+  3. Commit your changes (git commit -m 'Add some AmazingFeature')
 
   4. Push to the Branch (git push origin feature/AmazingFeature)
   
